@@ -1,0 +1,23 @@
+*{
+    margin:0px auto;
+    padding:0px auto;
+}
+
+table td{
+    height:100px!important;
+}
+
+.turn{
+    background: #adadad;
+}
+
+.singlebox{
+    font-size: 30px;
+}
+
+.tactactable{
+    font-size: 40px;
+}
+
+
+

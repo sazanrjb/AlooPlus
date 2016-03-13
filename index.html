@@ -1,0 +1,78 @@
+<!doctype html>
+<head>
+    <title>AlooPlus</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ripples.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center text-muted">Aloo<b>Plus</b></h2>
+
+        <div class="row inputBox">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div for="player1" class="form-group label-floating">
+                    <label class="control-label">Enter Player One</label>
+                    <input type="text" id="player1" class="form-control">
+                </div>
+                <div for="player2" class="form-group label-floating">
+                    <label class="control-label">Enter Player Two</label>
+                    <input type="text" id="player2" class="form-control">
+                </div>
+                <button id="confirmPlayerBttn" class="btn btn-raised btn-success form-control">Confirm Players</button>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <span id="playerIdentity"></span>
+        <span class="playerturn"></span>
+
+        <table class="table table-bordered table-responsive tictactable">
+            <tr>
+                <td>
+                    <span id="r1c1" class="text-center"></span>
+                </td>
+                <td>
+                    <span id="r1c2" class="text-center"></span>
+                </td>
+                <td>
+                    <span id="r1c3" class="text-center"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="r2c1" class="text-center"></span>
+                </td>
+                <td>
+                    <span id="r2c2" class="text-center"></span>
+                </td>
+                <td>
+                    <span id="r2c3" class="text-center"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="r3c1" class="text-center"></span>
+                </td>
+                <td>
+                    <span id="r3c2" class="text-center"></span>
+                </td>
+                <td>
+                    <span id="r3c3" class="text-center"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+    <script src="js/jQuery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+</html>
