@@ -57,15 +57,15 @@ $(document).ready(function(){
                 var r3c1 = $('#r3c1').attr('data');
                 var r3c2 = $('#r3c2').attr('data');
                 var r3c3 = $('#r3c3').attr('data');
-                if(r1c1 == 0 && r1c2 == 0 && r1c3 ==0 || r2c1 == 0 && r2c2 == 0 && r2c3 ==0 || r3c1 == 0 && r3c2 ==0 && r3c3 ==0 || r1c1 == 0 && r2c2 == 0 && r3c3 ==0 || r1c3 == 0 && r2c2 ==0 && r3c1 ==0 || r1c1 ==0 && r2c1 ==0 && r3c1 ==0 || r2c1 ==0 && r2c2 ==0 && r2c3==0 || r3c1==0 && r3c2 ==0 && r3c3 ==0){
+                if(r1c1 == 0 && r1c2 == 0 && r1c3 ==0 || r2c1 == 0 && r2c2 == 0 && r2c3 ==0 || r3c1 == 0 && r3c2 ==0 && r3c3 ==0 || r1c1 == 0 && r2c2 == 0 && r3c3 ==0 || r1c3 == 0 && r2c2 ==0 && r3c1 ==0 || r1c1 ==0 && r2c1 ==0 && r3c1 ==0 || r1c2 ==0 && r2c2 ==0 && r3c2==0 || r1c3==0 && r2c3 ==0 && r3c3 ==0){
                     $('.playerturn').html("<br><p class='text-center' style='background-color: #8c8c8c;color: #fff'>"+player1+" wins</p>");
                     swal({title: player1 + " wins \n"+player2 + " loses"})
                     win = 1;
                     winner = player1;
                     return false;
-                }else if(r1c1 == 1 && r1c2 == 1 && r1c3 == 1 || r2c1 == 1 && r2c2 == 1 && r2c3 == 1 || r3c1 == 1 && r3c2 ==1 && r3c3 == 1 || r1c1 == 1 && r2c2 == 1 && r3c3 == 1 || r1c3 == 1 && r2c2 == 1 && r3c1 == 1 || r1c1 == 1 && r2c1 ==1 && r3c1 ==1 || r2c1 ==1 && r2c2 ==1 && r2c3==1 || r3c1==1 && r3c2 ==1 && r3c3 ==1){
+                }else if(r1c1 == 1 && r1c2 == 1 && r1c3 == 1 || r2c1 == 1 && r2c2 == 1 && r2c3 == 1 || r3c1 == 1 && r3c2 ==1 && r3c3 == 1 || r1c1 == 1 && r2c2 == 1 && r3c3 == 1 || r1c3 == 1 && r2c2 == 1 && r3c1 == 1 || r1c1 == 1 && r2c1 ==1 && r3c1 ==1 || r1c2 ==1 && r2c2 ==1 && r3c2==1 || r1c3==1 && r2c3 ==1 && r3c3 ==1){
                     $('.playerturn').html("<br><p class='text-center' style='background-color: #8c8c8c;color: #fff'>"+player2+" wins</p>");
-                    swal({title: player1 + " wins \n"+player2 + " loses"})
+                    swal({title: player2 + " wins \n"+player1 + " loses"})
                     win = 1;
                     winner = player2;
                     return false;
@@ -99,15 +99,15 @@ $(document).ready(function(){
                 var r3c1 = $('#r3c1').attr('data');
                 var r3c2 = $('#r3c2').attr('data');
                 var r3c3 = $('#r3c3').attr('data');
-                if(r1c1 == 0 && r1c2 == 0 && r1c3 ==0 || r2c1 == 0 && r2c2 == 0 && r2c3 ==0 || r3c1 == 0 && r3c2 ==0 && r3c3 ==0 || r1c1 == 0 && r2c2 == 0 && r3c3 ==0 || r1c3 == 0 && r2c2 ==0 && r3c1 ==0 || r1c1 ==0 && r2c1 ==0 && r3c1 ==0 || r2c1 ==0 && r2c2 ==0 && r2c3==0 || r3c1==0 && r3c2 ==0 && r3c3 ==0){
+                if(r1c1 == 0 && r1c2 == 0 && r1c3 ==0 || r2c1 == 0 && r2c2 == 0 && r2c3 ==0 || r3c1 == 0 && r3c2 ==0 && r3c3 ==0 || r1c1 == 0 && r2c2 == 0 && r3c3 ==0 || r1c3 == 0 && r2c2 ==0 && r3c1 ==0 || r1c1 ==0 && r2c1 ==0 && r3c1 ==0 || r1c2 ==0 && r2c2 ==0 && r3c2==0 || r1c3==0 && r2c3 ==0 && r3c3 ==0){
                     $('.playerturn').html("<br><p class='text-center' style='background-color: #8c8c8c;color: #fff'>"+player1+" wins</p>");
                     swal({title: player1 + " wins \n"+player2 + " loses"})
                     win = 1;
                     winner = player1;
                     return false;
-                }else if(r1c1 == 1 && r1c2 == 1 && r1c3 == 1 || r2c1 == 1 && r2c2 == 1 && r2c3 == 1 || r3c1 == 1 && r3c2 ==1 && r3c3 == 1 || r1c1 == 1 && r2c2 == 1 && r3c3 == 1 || r1c3 == 1 && r2c2 == 1 && r3c1 == 1 || r1c1 == 1 && r2c1 ==1 && r3c1 ==1 || r2c1 ==1 && r2c2 ==1 && r2c3==1 || r3c1==1 && r3c2 ==1 && r3c3 ==1){
-                    $('.playerturn').html("<br><p class='text-center' style='background-color: #8c8c8c;color: #fff'>"+player1+" wins</p>");
-                    swal({title: player1 + " wins \n"+player2 + " loses"})
+                }else if(r1c1 == 1 && r1c2 == 1 && r1c3 == 1 || r2c1 == 1 && r2c2 == 1 && r2c3 == 1 || r3c1 == 1 && r3c2 ==1 && r3c3 == 1 || r1c1 == 1 && r2c2 == 1 && r3c3 == 1 || r1c3 == 1 && r2c2 == 1 && r3c1 == 1 || r1c1 == 1 && r2c1 ==1 && r3c1 ==1 || r1c2 ==1 && r2c2 ==1 && r3c2==1 || r1c3==1 && r2c3 ==1 && r3c3 ==1){
+                    $('.playerturn').html("<br><p class='text-center' style='background-color: #8c8c8c;color: #fff'>"+player2+" wins</p>");
+                    swal({title: player2 + " wins \n"+player1 + " loses"})
                     win = 1;
                     winner = player2;
                     return false;
