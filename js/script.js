@@ -7,23 +7,30 @@ $(document).ready(function(){
     var turn;
     var win,winner;
     var count=0;
+    $('#startOver').hide();
     $('#confirmPlayerBttn').click(function(){
-        player1 = $('#player1').val();
-        player2 = $('#player2').val();
-        if($('#player1').val() == "" || $('#player2').val() == ""){
-            swal({
-                title: "You must enter both players name!",
-                type: "warning"
-            });
+        if($('#defaultNames').prop('checked') != ""){
+            player1 = "Player1";
+            player2 = "Player2";
         }else{
+            player1 = $('#player1').val();
+            player2 = $('#player2').val();
+            if($('#player1').val() == "" || $('#player2').val() == ""){
+                swal({
+                    title: "You must enter both players name!",
+                    type: "warning"
+                });
+                return false;
+            }
+        }
             turn = 1;
             win = 0;
             $('.inputBox').slideUp();
             $('#playerIdentity').html("<p class='pull-left'>"+player1+" is <b>Aloo</b></p><p class='pull-right'>"+player2+" is <b>Plus</b></p>");
             $('.playerturn').html("<br><p class='text-center' style='background-color: #8c8c8c;color: #fff'>"+player1+"'s Turn</p>");
             $('.tictactable').slideDown();
-        }
-    })
+            $('#startOver').show();
+    });
     $('.tictactable').hide();
 
     $('.tictactable td').click(function(){
@@ -125,5 +132,9 @@ $(document).ready(function(){
                 turn = 1;
             }
         }
+    });
+
+    $('#startOver').click(function(){
+        window.location.href = "index.html";
     });
 });

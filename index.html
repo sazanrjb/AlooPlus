@@ -23,6 +23,11 @@
                     <label class="control-label">Enter Player Two</label>
                     <input type="text" id="player2" class="form-control">
                 </div>
+                <div>
+                <p class="text-center text-muted">
+                	Nope, I dont want to write names (Choose Default Names) <input type="checkbox" id="defaultNames">
+                </p>
+                </div>
                 <button id="confirmPlayerBttn" class="btn btn-raised btn-success form-control">Confirm Players</button>
             </div>
             <div class="col-md-4"></div>
@@ -30,38 +35,39 @@
 
         <span id="playerIdentity"></span>
         <span class="playerturn"></span>
+        <span><a href="javascript:void(0)" id="startOver" class="text-danger">Start Over?</a></span>
 
-        <table class="table table-bordered table-responsive tictactable">
+        <table class="table table-bordered table-striped tictactable">
             <tr>
-                <td>
+                <td width='30px'>
                     <span id="r1c1" class="text-center"></span>
                 </td>
-                <td>
+                <td width='30px'>
                     <span id="r1c2" class="text-center"></span>
                 </td>
-                <td>
+                <td width='30px'>
                     <span id="r1c3" class="text-center"></span>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td width='30px'>
                     <span id="r2c1" class="text-center"></span>
                 </td>
-                <td>
+                <td width='30px'>
                     <span id="r2c2" class="text-center"></span>
                 </td>
-                <td>
+                <td width='30px'>
                     <span id="r2c3" class="text-center"></span>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td width='30px'>
                     <span id="r3c1" class="text-center"></span>
                 </td>
-                <td>
+                <td width='30px'>
                     <span id="r3c2" class="text-center"></span>
                 </td>
-                <td>
+                <td width='30px'>
                     <span id="r3c3" class="text-center"></span>
                 </td>
             </tr>
