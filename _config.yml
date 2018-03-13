@@ -1,0 +1,8 @@
+title: Alooplus-tictactoe
+description: Aloo Plus or TicTacToe game made using HTML, CSS and JavaScript.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-hacker
+
+gems:
+  - jekyll-mentions
